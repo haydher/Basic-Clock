@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clock</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="popUp">
+    <div class="popUpContainer">
+      <h1>Cookie Policy</h1>
+      <p>This website uses cookies to save your settings, clock design, time type on YOUR local system.<span class="readMore"> Read more.</span></p>
+      <p class="moreInfo moreInfoHide">The only cookies that are saved are the following:</p>
+      <ul class="moreInfo moreInfoHide">
+        <ol>Whether you chose Analog Design or Digital Design</ol>
+        <ol>Your clock style for analog designs.</ol>
+        <ol>Time type, military(24 hour) or standard time(12 hour)</ol>
+        <ol>All the cookies are saved on your local system and are secure to you</ol>
+      </ul>
+      <div class="cookieBtn">
+        <button type="button" id="accept">Accept</button>
+        <button type="button" id="dontAccept">Don't Accept</button>
+      </div>
+    </div>
+  </div>
+  <h1>time</h1>
+  <div class="btnContainer">
+    <button type="button" id="analogBtn" class="buttonBorder">Analog</button>
+    <button type="button" id="digitalBtn">Digital</button>
+  </div>
+  <div class="clockContainer">
+    <div class="clock ">
+      <img src="images/clock.png" alt="">
+      <div class="hourTick"></div>
+      <div class="minTick"></div>
+      <div class="secTick"></div>
+      <div class="cover"></div>
+    </div>
+    <div class="digital invisible">
+        <div class="digitalBtnContainer">
+          <button type="button" id="hour24" class="btnSelected">24-Hour</button>
+          <button type="button" id="hour12" class="">12-Hour</button>
+        </div>
+      <p>
+        <span class="digital-hour"></span>
+        <span class="digital-minutes"></span>
+        <span class="digital-seconds"></span>
+        <span class="am-pm"></span>
+      </p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

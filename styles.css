@@ -1,0 +1,198 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  font-family: "Acme", sans-serif;
+  color: #ffffff;
+}
+.popUp {
+  position: absolute;
+  z-index: 10;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.938);
+}
+.popUpContainer {
+  background-color: rgb(41, 145, 230);
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  width: 30vw;
+}
+.popUpContainer h1 {
+  padding: 0;
+  font-size: 42px;
+}
+.popUpContainer p {
+  padding: 10px 30px;
+  font-size: 26px;
+  text-align: center;
+}
+.readMore {
+  color: rgb(167, 253, 242);
+  cursor: pointer;
+}
+.moreInfo {
+  padding: 0 30px;
+}
+.moreInfo ol {
+  padding-left: 20px;
+  padding-top: 4px;
+}
+.moreInfoHide {
+  display: none;
+}
+.cookieBtn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cookieBtn button {
+  background-color: white !important;
+  padding: 10px 40px;
+  font-family: "Acme", sans-serif;
+  font-size: 1.1vw;
+  font-weight: 500;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 10px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+  background-color: rgb(12, 109, 189);
+  height: 15%;
+  font-size: 4vw;
+  padding: 25px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.btnContainer {
+  background-color: rgb(12, 109, 189);
+  display: flex;
+  justify-content: center;
+  height: 6%;
+  width: 100%;
+  border-bottom: 2px solid #ffffff;
+}
+.btnContainer button {
+  background-color: rgb(12, 109, 189);
+  font-family: "Acme", sans-serif;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 1.5vw;
+  font-weight: 500;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.buttonBorder {
+  position: relative;
+  background-color: rgb(41, 145, 230) !important;
+  bottom: -2px;
+  border: 2px solid #ffffff !important;
+  border-bottom: none !important;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.clockContainer {
+  background-color: rgb(41, 145, 230);
+  width: 100%;
+  height: 79%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.clock {
+  position: relative;
+  margin: auto;
+  height: 600px;
+  width: 600px;
+  border-radius: 100%;
+  background-color: rgb(255, 255, 255);
+  border: 20px solid black;
+}
+img {
+  position: relative;
+  height: 100%;
+  z-index: 5;
+}
+.hourTick {
+  height: 38%;
+  background-color: aqua;
+}
+.minTick {
+  height: 32%;
+  background-color: blue;
+}
+
+.secTick {
+  height: 28%;
+  background-color: rgb(255, 30, 0);
+}
+.hourTick,
+.minTick,
+.secTick {
+  position: absolute;
+  bottom: 50%;
+  left: 49%;
+  width: 15px;
+  transform-origin: 50% 100%;
+}
+
+.digital {
+  width: 100%;
+
+  text-align: center;
+  margin: auto;
+}
+.digitalBtnContainer {
+  margin: auto 0;
+}
+.digitalBtnContainer button {
+  background-color: transparent;
+  border: 3px solid white;
+  outline: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 26px;
+  margin: 0 10px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transition-property: color, background-color;
+}
+.digitalBtnContainer button:hover {
+  color: rgba(0, 0, 0, 0.555);
+  background-color: white;
+  transition: all 0.3s ease;
+  transition-property: color, background-color;
+}
+.digitalBtnContainer .btnSelected {
+  color: rgba(0, 0, 0, 0.555);
+  background-color: white;
+}
+.digital p {
+  display: flex;
+  justify-content: center;
+  font-size: 190px;
+}
+.digital-seconds {
+  display: flex;
+  width: 200px;
+}
+.invisible {
+  display: none;
+}
